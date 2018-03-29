@@ -1,0 +1,164 @@
+/*General settings*/
+* {
+  padding:0;
+  margin:0;
+}
+.body {
+  background:#ffffff;
+  padding: 6%;
+}
+hr {
+  width:90%;
+  margin: 2%;
+  box-shadow: 0px 1px 2px 0px lightgrey;
+  color:white;
+}
+p {
+  color:#616161;
+}
+/*NAVBAR*/
+#flex-nav{
+  display:flex;
+  position:fixed;
+  box-shadow: 0 2px 2px -1px grey;
+  width:100%;
+  opacity:1;
+  /*background: linear-gradient(to right, rgba(211,211,211,0), rgba(211,211,211,1));*/
+  background:linear-gradient(to right, white, lightgrey)
+}
+.main-header {
+  display:flex;
+  justify-content:space-around;
+  border-bottom: lightgrey ridge 1px;
+  box-shadow:none;
+  padding:0.3%;
+  flex-basis:100%;
+}
+.img{
+  display:flex;
+  box-shadow:none;
+  margin:0 30px;
+  padding:0.3rem;
+  justify-content:flex-start;
+}
+/*nav list*/
+.navbar ul{
+  display:flex;
+  padding-top:10px;
+  position:static;
+  flex-wrap:wrap;
+  box-shadow:none;
+}
+.navbar li {
+  margin:0 20px;
+  padding:10px;
+}
+.nav-items{
+    display:flex;
+    list-style-type:none;
+    box-shadow:none;
+}
+.nav-items li:nth-child(even):hover{
+  border-bottom:2px ridge #e44232;
+}
+.nav-items li:nth-child(odd):hover {
+  border-bottom:2px ridge #316FEA;
+}
+.current{
+  border-bottom: 2px #316FEA solid;
+}
+/*first section with the pics*/
+h1 {
+  font-size:1.5rem;
+  font-family:"Graphik Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:#383838;
+  margin:1%;
+}
+small {
+  font-size: 1.5rem;
+  color:grey;
+}
+.flex span {
+  color:#e44232;
+}
+.flex h2{
+  color:#316FEA;
+}
+.flex {
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  grid-gap:2em;
+  background-size:cover;
+  margin: 2rem;
+}
+.box {
+  display:grid;
+  box-shadow: 0 1px 3px 1px lightgrey;
+  border: 1px solid lightgrey;
+  box-sizing:border-box;
+  align-items:center;
+  justify-content:center;
+  padding:3%;
+}
+#grid {
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  grid-gap:2em;
+  margin: 2rem;
+  font-size:2rem;
+}
+ h3{
+  color:#e44232;
+}
+#blue {
+  color:#316FEA;
+}
+#grid span {
+  color:black;
+  font-size:1rem;
+}
+/*News about Doist*/
+.wrapper {
+  display:flex;
+  flex-flow:row;
+  flex-wrap:nowrap;
+  flex: 2 0 0;
+  justify-content:space-around;
+  margin:2%;
+}
+.wrapper ul {
+  list-style:none;
+}
+.news {
+  display:flex;
+  padding: 5%;
+  margin:5%;
+  box-shadow:0px 1px 2px 2px lightgrey;
+  background:#f2f2f2;
+  justify-content:flex-start;
+  align-content:flex-start;
+}
+.articles, .podcasts {
+  display:flex;
+}
+a {
+  text-transform:capitalize;
+  text-decoration:none;
+  color:#e44232;
+  text-align:left;
+}
+.news1, .news2, .news3{
+  box-shadow:0px 1px 2px 2px lightgrey;
+}
+/*navbar*/
+#f-navbar {
+  background: lightgrey;
+}
+#f-navbar ul{
+  list-style:none;
+  text-align:center;
+}
+#f-navbar li{
+    display:inline;
+    margin:0 20px;
+}
